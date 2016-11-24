@@ -1,0 +1,5 @@
+*.pyc
+.Debugger*
+.dev/*
+*.swp
+*.swo
