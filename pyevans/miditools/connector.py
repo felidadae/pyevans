@@ -30,6 +30,6 @@ def getMidiOutput():
 	"""
 		returns mido reference to midiSink
 	"""
-	# print(mido.get_output_names()) 
+	print(mido.get_output_names()) 
 	output = mido.open_output( mido.get_output_names()[1] )
 	return output
