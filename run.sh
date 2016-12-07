@@ -4,7 +4,7 @@ source $scriptPath/tools.sh
 
 cd $scriptPath
 if [[ $(pgrep fluidsynth) == "" ]]; then
-	run_fluidsynth_alsa
+	run_fluidsynth_alsa $fontSynth
 	sleep 0.5 
 fi
 python3 pyevans/main.py
