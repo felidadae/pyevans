@@ -5,7 +5,7 @@ function run_fluidsynth_alsa {
 	local fontFile=${1}
 	if [[ $(pgrep fluidsynth) == "" ]]; then
 		fluidsynth --server --no-shell --audio-driver=alsa \
-			--reverb=0.0 --chorus=0.0 --gain=0.3 -o audio.period-size=512 \
+			--reverb=0.0 --chorus=0.0 --gain=0.3 -o audio.period-size=2048 \
 			"$fontFile" \
 			&>/tmp/fluidsynth.out &
 	fi
